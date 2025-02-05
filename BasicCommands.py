@@ -1,5 +1,12 @@
 import math # To import the module math 
 
+print(int(6.5)) # returns only integer part
+
+print(round(12.57)) # round to nearest integer
+
+x = ['Apple', 'Mango', 'Banana']
+print("Apple" in x)
+
 i = 0
 while(i < 3):
     print(i, end = " ")
