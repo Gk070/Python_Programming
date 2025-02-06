@@ -1,10 +1,14 @@
 alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+encstr = ""
 
-str1 = input("Enter String : ")
+str1 = input("Enter String : ").upper()
 
-for i in range(len(str1)):
-    x = alph.index(str1[i])
-    x = (x + 3) % 26
-    str1[i] = alph[x]
+for char in str1:
+    if char in alph:
+        x = alph.index(char)
+        x = (x + 3) % 26
+        encstr += alph[x]
+    else:
+        encstr += char
 
-print("Encrypted name is : ", str1)
+print("Encrypted name is : ", encstr)
