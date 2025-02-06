@@ -1,5 +1,6 @@
 import math # To import the module math
 
+
 print(10 % 20)
 
 print(int(6.5)) # returns only integer part
