@@ -15,4 +15,4 @@ real2 = int(input("Enter real part of 2 : "))
 img2 = int(input("Enter imaginary part of 1 : "))
 
 c1 = Complex(real1, img1, real2, img2)
-c1.__add__()
+print(c1.__add__())
